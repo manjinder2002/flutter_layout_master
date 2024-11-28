@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 List<String> generate() {
   List<String> imageList = [];
-  for (var i = 1; i < 8; i++) {
+  for (var i = 1; i < 9; i++) {
     imageList.add('assets/images/image${i}.jpg');
   }
   return imageList;
@@ -15,6 +15,7 @@ List<Widget> numbers = categories.map((category) {
       color: Colors.red,
       child: Image.asset(
         category,
+        fit: BoxFit.cover,
       ) //Image.asset
       ); //Card
 }).toList();
